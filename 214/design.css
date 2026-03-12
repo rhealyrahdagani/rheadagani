@@ -215,14 +215,13 @@ p {
   background: #d9e1cd;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -o-border-radius: 2px;
+  border-radius: 2px;
   content: "D";
   font-size: 16px;
   text-indent: 0;
 
   /* icomoon.io defaults */
   font-family: 'verdemoderna';
-  speak: none;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
@@ -427,12 +426,11 @@ div.participation p, div.benefits p {
   font-size: 44px;
   /* icomoon.io defaults */
   font-family: 'verdemoderna';
-  speak: none;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 70px;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; /* keep for smooth rendering in Chrome/Safari */
 }
 .design-archives .viewall a:hover, .design-archives .viewall a:focus, .design-archives .viewall a:active,
 .design-archives a:hover::before, .design-archives a:focus::before, .design-archives a:active::before {
@@ -544,7 +542,6 @@ footer a::before {
   text-indent: 0;
   /* icomoon.io defaults */
   font-family: 'verdemoderna';
-  speak: none;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
